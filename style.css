@@ -1,0 +1,317 @@
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  color: black;
+}
+
+.blind {
+  display: none;
+}
+
+.intro {
+  width: 100%;
+  height: 718px;
+  background-image: url(./imgs/intro2.png);
+  background-size: cover;
+}
+
+.nav {
+  display: flex;
+  margin: 0 auto;
+  width: 1280px;
+  height: 86px;
+  align-items: center;
+}
+
+.searchbar {
+  width: 300px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: 0;
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  padding: 10px;
+}
+
+.material-symbols-outlined {
+  color: white;
+  font-size: 40px;
+  width: 40px;
+  position: relative;
+  right: 30px;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: #ffffffa6;
+  opacity: 1;
+}
+
+.menubar {
+  display: flex;
+  width: calc(1280px - 300px);
+  justify-content: right;
+}
+
+.menu {
+  padding: 20px;
+  margin-left: 20px;
+  transition: transform 300ms ease;
+}
+
+.menu > a {
+  color: white;
+}
+
+.menu:hover {
+  transform: scale(1.1);
+}
+
+.introduce {
+  margin: auto;
+  text-align: center;
+  margin-top: 231px;
+}
+
+.introduce > h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.introduce > h3 {
+  color: white;
+  font-size: 25px;
+  font-weight: 200;
+}
+
+/* +++++++++++++ main ++++++++++++++ */
+
+/* +++notice+++ */
+
+.notice {
+  width: 100%;
+  height: 600px;
+  background: #f1f2f3 0% 0% no-repeat padding-box;
+}
+
+.summarybox {
+  width: 1280px;
+  height: 132px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  background-color: white;
+  position: relative;
+  top: -66px;
+  border-radius: 5px;
+}
+
+.box {
+  width: 320px;
+  height: 53px;
+  text-align: center;
+}
+
+.box:not(:last-child) {
+  border-right: 1px solid gray;
+}
+
+.summarybox > li > h4 {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.noticebottom {
+  width: 100%;
+  height: calc(600px - 132px);
+}
+
+.noticeevent {
+  text-align: center;
+  position: relative;
+  top: -30px;
+}
+
+.noticeevent > h2 {
+  font-size: 48px;
+}
+
+.noticeevent > h4 {
+  font-size: 20px;
+}
+
+.newproduct {
+  margin-top: 10px;
+}
+
+.news {
+  display: flex;
+  width: 1280;
+  justify-content: center;
+}
+
+.news > li {
+  width: 413px;
+  height: 302px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-left: 10px;
+}
+
+.news > li > img {
+  border-radius: 5px;
+}
+
+.news > li > h3 {
+  position: relative;
+  top: 10px;
+}
+
+.news > li > h5 {
+  position: relative;
+  font-weight: 200;
+  top: 10px;
+}
+
+.news > li > a {
+  position: relative;
+  top: 25px;
+  background-color: #2f7af4;
+  color: white;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+/* +++product+++ */
+
+.products {
+  width: 100%;
+  height: 650px;
+  background-color: white;
+}
+
+.prodetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.proname {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  position: relative;
+  top: 40px;
+}
+
+.proname > h2 {
+  font-size: 35px;
+}
+
+.proname > h5 {
+  font-weight: 400;
+}
+
+.piccomment {
+  width: 1280px;
+  height: calc(650px - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.propicture {
+  width: 400px;
+  height: 426px;
+  text-align: center;
+}
+
+.propicture > img {
+  border-radius: 10px;
+}
+
+.comment {
+  width: 300px;
+  height: 426px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.comment > h5 {
+  font-weight: 200;
+  font-size: 15px;
+}
+
+/* +++about+++ */
+
+.about {
+  width: 100%;
+  height: 400px;
+  background: #f1f2f3 0% 0% no-repeat padding-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-wrap {
+  width: 472px;
+  height: 143px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-wrap > h2 {
+  font-size: 40px;
+}
+
+.contact-wrap > a {
+  position: relative;
+  top: 50px;
+  background-color: #2f7af4;
+  display: inline-block;
+  width: 250px;
+  height: 25px;
+  border: 1px solid black;
+  color: white;
+}
+
+/* +++information+++ */
+
+.information {
+  width: 100%;
+  height: 300px;
+  background-image: url(./imgs/aboutback.png);
+}
+
+.info-wrap {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.info-wrap > div > h3 {
+  color: black;
+  line-height: 40px;
+}
